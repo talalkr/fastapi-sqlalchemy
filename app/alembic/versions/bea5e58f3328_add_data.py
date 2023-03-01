@@ -12,7 +12,7 @@ from alembic import op
 from sqlalchemy import orm, select
 from sqlalchemy.exc import NoResultFound
 
-from main.models import Director, Movie
+from app.models import Director, Movie
 
 
 # revision identifiers, used by Alembic.

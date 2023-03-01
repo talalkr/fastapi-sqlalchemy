@@ -3,7 +3,7 @@ from sqlalchemy.orm import joinedload, load_only
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from typing import List
-from main.models import Director
+from app.models.director import Director
 
 # TODO: add exception handling
 class DirectorCrud:
@@ -12,7 +12,6 @@ class DirectorCrud:
         result = await session.execute(query)
         return result.scalars().unique().all()
 
-    # TODO: use load_only to avoid loading entire object
     async def get_director_movies(
         self, session: AsyncSession, director_fields
     ) -> List[Director]:

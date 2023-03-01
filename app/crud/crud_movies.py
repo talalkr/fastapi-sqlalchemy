@@ -3,7 +3,7 @@ from sqlalchemy.orm import joinedload, load_only
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from typing import List
-from main.models import Movie
+from app.models.movie import Movie
 
 # TODO: add exception handling
 class MovieCrud:

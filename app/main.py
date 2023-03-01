@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from strawberry.fastapi import GraphQLRouter
 
-from .database import async_session
-from api.schema import schema
+from app.db.session import async_session
+from app.schema import schema
 
 
 async def get_context() -> dict:

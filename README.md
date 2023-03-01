@@ -1,4 +1,4 @@
-# FastAPI + SQLAlchemy
+# Strawberry GraphQL + FastAPI + SQLAlchemy
 
 A fork of [fastapi-sqlalchemy](https://github.com/strawberry-graphql/examples/tree/main/fastapi-sqlalchemy) except it uses async-sqlite and upgraded 3rd party packages.
 
@@ -52,7 +52,7 @@ poetry run alembic upgrade head
 Run [uvicorn](https://www.uvicorn.org/) to run the server:
 
 ```bash
-poetry run uvicorn main:app --reload
+poetry run uvicorn app.main:app --reload
 ```
 
 The GraphQL API should now be available at http://localhost:8000/graphql
